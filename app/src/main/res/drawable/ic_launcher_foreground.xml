@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Primary Heart Silhouette (Professional Blue) -->
+    <path
+        android:fillColor="#0876C9"
+        android:pathData="M54,23 C68,23 80,34 80,49 C80,65 59,80 54,84 C49,80 28,65 28,49 C28,34 40,23 54,23 Z" />
+
+    <!-- Cross Vertical Bar (White) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50.5,36 h7 c0.8,0 1.5,0.7 1.5,1.5 v25 c0,0.8 -0.7,1.5 -1.5,1.5 h-7 c-0.8,0 -1.5,-0.7 -1.5,-1.5 v-25 c0,-0.8 0.7,-1.5 1.5,-1.5 Z" />
+
+    <!-- Cross Horizontal Bar (White) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M39,45.5 h30 c0.8,0 1.5,0.7 1.5,1.5 v7 c0,0.8 -0.7,1.5 -1.5,1.5 h-30 c-0.8,0 -1.5,-0.7 -1.5,-1.5 v-7 c0,-0.8 0.7,-1.5 1.5,-1.5 Z" />
+
+</vector>

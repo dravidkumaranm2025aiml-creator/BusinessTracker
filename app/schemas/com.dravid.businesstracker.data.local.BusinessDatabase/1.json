@@ -1,0 +1,65 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "b8112bd6ae6235af6ff18b672a400f93",
+    "entities": [
+      {
+        "tableName": "business_records",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `policy_number` TEXT NOT NULL, `premium_amount` REAL NOT NULL, `status` TEXT NOT NULL, `business_date` INTEGER NOT NULL, `issue_date` INTEGER, `source_id` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "policyNumber",
+            "columnName": "policy_number",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "premiumAmount",
+            "columnName": "premium_amount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "businessDate",
+            "columnName": "business_date",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "issueDate",
+            "columnName": "issue_date",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "sourceId",
+            "columnName": "source_id",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'b8112bd6ae6235af6ff18b672a400f93')"
+    ]
+  }
+}
